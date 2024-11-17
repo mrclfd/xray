@@ -265,6 +265,6 @@ jobs:
             export COMMIT=$(git log --oneline -n 15 --no-decorate | sed 's/^[0-9a-f]* //' | sed 's/^/— /')
             FILE=$(find -name "*.zip")
             pip3 install telethon==1.31.1
-            python3 $GITHUB_WORKSPACE/.github/twnesss.py $FILE
+            python3 $GITHUB_WORKSPACE/.github/action.py $FILE
           fi
           
